@@ -1,0 +1,37 @@
+{
+  "info": {
+    "name": "Load testing",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "New Request",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"operation\": \"list\",\n    \"tableName\": \"lambda-apigateway\",\n    \"payload\": {\n    }\n}\n"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/Prod/DynamoDBManager",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "Prod",
+            "DynamoDBManager"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://YOUR_API_ID.execute-api.us-west-2.amazonaws.com",
+      "type": "string"
+    }
+  ]
+}

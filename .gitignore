@@ -1,0 +1,16 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.venv/
+*.log
+*.zip
+*.pem
+*.key
+*.p12
+*.pfx
+terraform.tfstate*
+.aws/
+secrets.json
